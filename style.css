@@ -1,2 +1,32 @@
-## css for index
+/* This is a single-line comment */
+
+/* Style the header */
+.header {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+  }
+
+body {
+    background-color: lightblue;
+  }
+
+.p1 {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+}
+
+.p2 {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+}
+
 
