@@ -1,35 +1,183 @@
 <!DOCTYPE html>
-<html>
-
-<style>
-    h3 {text-align: center;}
-</style>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qizhou Duan - Quantitative Psychology Researcher</title>
+    <style>
+        :root {
+            --primary-color: #0c345c;
+            --secondary-color: #86b3d1;
+            --text-color: #333;
+            --background-light: #f5f8fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .research-interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .research-item {
+            background: var(--background-light);
+            padding: 1rem;
+            border-radius: 6px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--secondary-color);
+        }
+
+        .publications {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .publications li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .publications li::before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .hobbies {
+            background: var(--background-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
+<body>
+    <div class="header">
+        <h1>Qizhou Duan</h1>
+        <div class="subtitle">Ph.D. Candidate in Quantitative Psychology</div>
+    </div>
 
-<div class="header">
-    <h1>Qizhou Duan</h1>
-</div>
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <div class="bio">
+                I am a Ph.D. candidate in Quantitative Psychology at the University of Notre Dame and a fellow in the ND PIER program (Program for Interdisciplinary Educational Research). My research focuses on innovative approaches in psychometrics, particularly in response time modeling and differential item functioning. With a unique background in both Mathematics and Psychology, I bring a interdisciplinary perspective to educational measurement and psychological research.
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/qizhou-duan-bb6a61132/" class="social-link">LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=OoYAYggAAAAJ&hl=en" class="social-link">Google Scholar</a>
+                <a href="https://www.researchgate.net/profile/Qizhou-Duan" class="social-link">ResearchGate</a>
+                <a href="https://orcid.org/0000-0002-4760-3971" class="social-link">ORCID</a>
+                <a href="https://psychology.nd.edu/people/graduate-students/qizhou-duan/" class="social-link">Notre Dame Profile</a>
+            </div>
+        </section>
 
-<h3>Short Bio</h3>
-<div class="p1">
-    I am a Ph.D. candiate in quantitative psychology, and a fellow in the <a href = "https://iei.nd.edu/initiatives/pier">ND PIER program</a> 
-    (Program for interdisciplinary educational research).  
-    My research mainly focuses on response time models in the context of psychometric analysis, 
-    looking for ways to utilize response time to either improve parameter esitmation or to detect item biases. 
-    Besides response time models, I am interested in both conducting meta-analysis, and methodologies related to meta-analysis. 
-    I also have substantive interests in clinical and cognitive research. 
-    I can be reached at my email: qduan@nd.edu, and you can find my CV <a href = "cv_qizhou.pdf" >here</a>.
-</div>
+        <section class="section">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <div class="research-item">
+                    <h3>Response Time Modeling</h3>
+                    <p>Developing innovative approaches to utilize response time data in psychometric analysis and detection of item biases.</p>
+                </div>
+                <div class="research-item">
+                    <h3>Meta-Analysis</h3>
+                    <p>Conducting and developing methodologies for systematic reviews and meta-analyses in educational and psychological research.</p>
+                </div>
+                <div class="research-item">
+                    <h3>Differential Item Functioning</h3>
+                    <p>Investigating novel methods for detecting and analyzing item bias in educational and psychological testing.</p>
+                </div>
+            </div>
+        </section>
 
-<h3>Spare Time</h3>
-<div class="p2"> In my spare time, I enjoy playing soccer and chess.
-    You are welcome to challenge me on <a href ="https://chess.com">chess.com</a>, my username is chess_player24601. </div>
+        <section class="section">
+            <h2>Recent Publications</h2>
+            <ul class="publications">
+                <li>Duan, Q. & Cheng, Y., (In press) Detecting Differential Item Functioning Using Response Time. Educational and Psychological Measurement.</li>
+                <li>Ober, T., Duan, Q., Kane, E., Blacklock, C., & Cheng, Y., (under review) Student Engagement during COVID-19: A Systematic Review and Meta-analysis.</li>
+                <li>Duan, Q., (2015) Listen to the Sound of Time: Poems and Prose Anthology of Qizhou Duan.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Beyond Academia</h2>
+            <div class="hobbies">
+                <p>When I'm not immersed in research, I enjoy playing chess and soccer. I'm an active chess player with profiles on both chess.com (chess_player24601) and USCF. Feel free to challenge me to a game! You can find my USCF profile <a href="https://www.uschess.org/msa/MbrDtlMain.php?32087916">here</a>.</p>
+            </div>
+        </section>
+    </div>
 </body>
-
-<html>
-
-
-
+</html>
