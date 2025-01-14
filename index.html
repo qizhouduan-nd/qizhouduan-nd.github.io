@@ -6,7 +6,7 @@
     <title>Qizhou Duan - Quantitative Psychology Researcher</title>
     <style>
         :root {
-            --primary-color: #0c345c;
+            --primary-color: #001f4d;
             --secondary-color: #86b3d1;
             --text-color: #333;
             --background-light: #f5f8fa;
@@ -21,7 +21,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: var(--primary-color);
             color: white;
             padding: 2rem;
             text-align: center;
@@ -97,6 +97,45 @@
             background: var(--secondary-color);
         }
 
+        .text-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 2px solid var(--secondary-color);
+            transition: all 0.3s ease;
+        }
+
+        .text-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .chess-button {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .chess-link {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .chess-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .bio-links {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
         .publications {
             list-style-type: none;
             padding: 0;
@@ -121,12 +160,8 @@
             border-radius: 8px;
             margin-top: 1rem;
         }
-        .chess-button {
-            margin: 1.0rem 0;
-            text-align: left;
-        }
-
     </style>
+
 </head>
 <body>
     <div class="header">
@@ -140,7 +175,7 @@
             <div class="bio">
                 I am a Ph.D. candidate in Quantitative Psychology at the University of Notre Dame and a fellow in the ND PIER program (Program for Interdisciplinary Educational Research). 
                 My research focuses on psychometrics, particularly in response time modeling and differential item functioning.
-                you can find my CV <a href="cv_qizhou.pdf" class="text-link">here</a>. 
+                You can find my CV <a href="cv_qizhou.pdf" class="text-link">here</a>. 
             </div>
             
             <div class="social-links">
@@ -182,9 +217,7 @@
         <section class="section">
             <h2>Spare Time</h2>
             <div class="hobbies">
-                <p> Outside of research, I enjoy playing chess and soccer. You can find my USCF profile here:                     <div class="chess-button">
-                    <a href="https://www.uschess.org/msa/MbrDtlMain.php?32087916" class="chess-link">USCF</a>
-                </div>
+                <p> Outside of research, I enjoy playing chess and soccer. You can find my USCF profile  <a href="https://www.uschess.org/msa/MbrDtlMain.php?32087916" class="chess-link">here</a>.                  
             </p>
 
             </div>
